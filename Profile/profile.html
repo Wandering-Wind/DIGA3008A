@@ -6,6 +6,7 @@
     <title>Profile</title>
     <meta name="author" content="Amina Moosa">
     <meta name="description" content="Profile containing information about me and contact information">
+    <link rel="stylesheet" href="profile.css">
 </head>
     <body>
         <header>
@@ -17,22 +18,35 @@
                 <a href="../Portfolio/portfoli.html">Portfolio</a>
                 <a>Profile</a>
             </nav>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Iansui&family=Londrina+Sketch&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Tangerine:wght@400;700&family=Updock&display=swap" rel="stylesheet">
+
         </header>
 
         <main>
             <h1 class="p-name" >About me</h1>
-                <p>
+                <p class="h-card">
                     <figure>
                         <figcaption>That's me!</figcaption>
                         <img class="u-photo" src="../Images/profile_avatar.png" alt="A avatar of me" width="300" height="300">
                     </figure>
+                    <span class="p-name">Amina Moosa</span><br>
+                    <a class="u-email" href="mailto:2750697@students.wits.ac.za">2750697@wits.ac.za</a><br>
+                    <span class="p-org">University of Witwatersrand</span><br>
+                    <span class="p-locality">Johannesburg</span><br>
+                    <span class="p-country-name">South Africa</span>
                     
                 </p>
+
                 <p class="p-name">
                     I'm Amina Moosa. A 3rd year Digital Arts student at Wits. 
                     I'm currently majoring in Game Design and Interactive Media.
                     Follow along for more updates on my web portfolio.
                 </p>
+
+                
         </main>
 
         <footer>

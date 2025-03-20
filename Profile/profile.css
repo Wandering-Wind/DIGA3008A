@@ -1,0 +1,50 @@
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: pink;
+    font-size: 36px;
+}
+
+
+
+.p-exercise{
+    color: blue;
+    font-size: 18px;
+}
+
+ul{
+    color: orange;
+    list-style-type: square;
+}
+
+
+a.href{
+    color: pink;
+}
+
+.navlinks{
+    list-style-type: none;
+    background-color: black;
+    display: inline-flex;
+    
+    
+}
+
+.navlinks a{
+    color: aliceblue;
+    background-color: blueviolet;
+    
+    
+    font-size: 16px;
+    font-weight: bold;
+    
+    border-radius: 50%;
+    
+    
+
+}
+
+
+
+
+
+
