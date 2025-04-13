@@ -1,0 +1,21 @@
+.section-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    
+}
+
+main article
+{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 25px; 
+}
