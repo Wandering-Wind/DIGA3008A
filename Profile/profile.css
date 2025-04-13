@@ -1,46 +1,31 @@
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: pink;
-    font-size: 36px;
-}
-
-
-
-.p-exercise{
-    color: blue;
-    font-size: 18px;
-}
-
-ul{
-    color: orange;
-    list-style-type: square;
-}
-
-
-a.href{
-    color: pink;
-}
-
-.navlinks{
-    list-style-type: none;
-    background-color: black;
-    display: inline-flex;
+.section-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    
     
     
 }
 
-.navlinks a{
-    color: aliceblue;
-    background-color: blueviolet;
-    
-    
-    font-size: 16px;
-    font-weight: bold;
-    
-    border-radius: 50%;
-    
-    
+main article
+{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-size: 25px; 
+}
 
+main figure
+{
+    float: left;
+    margin: 0 auto;   
 }
 
 
