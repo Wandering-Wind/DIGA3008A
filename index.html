@@ -6,35 +6,66 @@
     <title>Amina Moosa</title>
     <meta name="author" content="Amina Moosa">
     <meta name="description" content="Home page for the website">
+
+    <link rel="icon" href="Images/profile_avatar.png" type="image/x-icon">
+    <link rel="stylesheet" href="normalize.css"/>
+    <!--<link rel="stylesheet" href="index.css"/>-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Iansui&family=Londrina+Sketch&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Share+Tech+Mono&family=Tangerine:wght@400;700&family=Updock&display=swap" rel="stylesheet">
+
 </head>
     <body>
         <header>
-            <nav>
-                <a>Home</a>
-                <a href="Blogs/blog.html">Blogs</a> 
-                <a href="Designs/designs.html">Designs</a>
-                <a href="Essays/essay.html">Essays</a> 
-                <a href="Portfolio/portfolio.html">Portfolio</a>
-                <a href="Profile/profile.html">Profile</a>
+            <nav>              
+                <img src="Images/profile_avatar_2.png" class="logoImage" alt="Avatar image of Amina Moosa"/>
+                <span class="logo">Amina Moosa</span>
+                <script src="https://kit.fontawesome.com/486a7eab66.js" crossorigin="anonymous"></script>
+                <input type="checkbox"  id="check"/>
+                <label for="check" class="burger-button"><i class="fa-solid fa-bars"></i></label>
+                <ul>
+                <li><a class="active">Home</a></li>
+                <li><a href="Blogs/blog.html">Blogs</a> </li>
+                <li><a href="Designs/designs.html">Designs</a></li>
+                <li><a href="Essays/essay.html">Essays</a></li> 
+                <li><a href="Portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="Profile/profile.html">Profile</a></li>
+                </ul>
             </nav>
         </header>
         
         <main>
-            <h1 class="p-name">Hakuna Matata</h1> 
+            <div class="container">
+            <h1 class="p-name">Hakuna Matata!</h1> 
                 <article class="h-entry e-content">
                 <p class="p-summary">
-                    Welcome to my portfolio — where I pretend I know what I’m doing, and you pretend you believe me. Let’s make this awkward moment worth it. <br>
-                    Stay tuned for more!
-                    
+                    You’ve entered the player zone!<br>
+                    Here you’ll find the projects I’ve designed, tweaked, or co-built—each one a step in my evolution as a game designer.
+                    Grab a snack and click around. Check out the blogs while you're here. Ready to explore?                    
                 </p>
-
-                <p>
-                    <h3>Check out the blogs while you're here</h3>
-                </p>
-            </article>
+                <figure>
+                    <img src="Images/profile_avatar_2.png" class="avatar"  alt="Avatar image of Amina Moosa." width="300" height="300" />
+                   </figure>
+                </article>
+            </div>
         </main>
 
         <footer>
+            <p class="footer">
+                <a href="mailto:2750697@students.wits.ac.za">
+                <i class="fas fa-envelope"></i> Email
+                </a>
+                  
+                <a href="https://github.com/Wandering-Wind" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+                </a>
+                  
+                <a href="https://wandering-wind.itch.io/" target="_blank">
+                <i class="fab fa-itch-io"></i> Itch.io
+                </a>
+            </p>
+
             <p>Brought to you by Amina Moosa</p>
         </footer>
     </body>
