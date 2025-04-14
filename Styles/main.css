@@ -22,7 +22,7 @@ body::after {
     z-index: 0;
 }
 
-h1, .logo, nav ul li a {
+h1, .logo, nav ul li a, a, h2 {
     text-shadow: 0 0 8px #00f6ff, 0 0 15px #00f6ff;
 }
 
