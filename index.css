@@ -1,250 +1,68 @@
-body 
-{
-    background: linear-gradient(-45deg, #00001b, #0a0049, #00156a, #000d5d);
-    background-size: 800% 800%;
-    animation: gradientShift 10s ease-in-out infinite;
-    color: aliceblue;
-    min-height: 100vh;
-    margin: 0;
-}
 
-body::after {
-    content: "";
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: 
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-    background-size: 40px 40px;
-    pointer-events: none;
-    z-index: 0;
-}
-
-h1, .logo, nav ul li a {
-    text-shadow: 0 0 8px #00f6ff, 0 0 15px #00f6ff;
-}
-
-.pulse-circle {
-    width: 300px;
-    height: 300px;
-    background-color: #00f6ff;
-    border-radius: 50%;
-    position: absolute;
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(0.9); opacity: 0.7; }
-    50% { transform: scale(1.2); opacity: 1; }
-    100% { transform: scale(0.9); opacity: 0.7; }
-}
-
-h1
-{
-    font-family: "Orbitron", sans-serif;
-    color: aliceblue;
-    text-align: center;
-}
-
-p
-{
-    font-family: "Share Tech Mono", sans-serif;
-    color: aliceblue;
-}
-
-nav 
-{
-    background: rgba(0, 12, 93, 0.61);
-    width: 100%;
-    height: 80px;
-    position:fixed;
-    top: 0px;
-    /*box-shadow: 0px 10px 20px rgb(21, 0, 249);*/
-    
-    box-shadow: 0 0 15px #001dff, 0 0 30px #001dff inset;
-    border-bottom: 1px solid #00f6ff;
-    
-}
-
-.logo-container 
-{
-    display: flex;
-    align-items: center; /* Trying to vertically centers both image and text */
-    padding: 10px 25px;
-  }
-
-  .logo 
-  {
-    font-family: "Audiowide", sans-serif;
-    font-size: 18;
-    color: white;
-    line-height: 1;
-    margin-top: 10px;
-
-  }
-
-  .logoImage 
-  {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    object-fit: cover;    
-  }
-
-nav ul
-{
-    
-    float: right;
-    margin-right: 40px;
-    display: flex;
-    list-style: none;
-    
-}
-
-nav ul li
-{
-    display: inline-block;
-    margin-right: 20px;
-    margin-top: 10px;
-    font-family:"AudioWide", sans-serif;
-    transform: skewX(-30deg);
-    
-}
-
-nav ul li a
-{
-    font-size: 18px;
-    color: #b5d4ed;
-    text-decoration: none;
-    
-}
-
-nav ul li a:hover
-{
-    /*transform: translateY(-5px);*/
-    color: rgba(255, 255, 255, 0.605);
-    background-color: rgba(0, 21, 255, 0.204);
-    width: 15%;
-    box-shadow:  2px 2px 2px rgb(0, 140, 255);
-    /*padding: 5px 10px; Padding has a weird effect on the spacing when hovering*/
-}
-
-a.active 
-{
-    background-color: rgba(8, 0, 101, 0.756);
-    color: white;
-    padding: 5px 10px;
-    box-shadow:  2px 2px 2px rgb(0, 140, 255);
-    /*border-radius: 50%- To create parallelogram effect, cannot have this and have to do it in the transform*/
-   
-    transform: skewX(-20deg);
-}
-
-
-
-.burger-button
-{
-   font-size: 30px;
-   color: white;
-   float: right;
-   margin-right: 40px;
-   line-height: 80px; 
-   cursor: pointer;
-   display: none;
-}
-#check
-{
-    display: none;
-}
 
 .section-wrapper {
     border: 2px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
     padding: 20px;
     margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
+    align-items: center;
     backdrop-filter: blur(3px);
+    justify-content: center;
+
 }
 
-.footer
+.about-container
 {
-    font-family: "AudioWide", sans-serif;
-}
-
-footer
-{
-    background: rgb(1, 8, 52);
-    height: 90px;
-    width: 100%;
-    /*box-shadow: 0 0 10px 20px rgba(0, 0, 255, 0.766);*/
-    box-shadow: 0 0 15px 20px #001dff, 0 0 30px #001dff inset;
-    border-top: 1px solid #00f6ff;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    bottom: 0;
+    /*margin: 20px; margin-top: 10%;*/
+    backdrop-filter: blur(3px);
+    margin-left: 1%;
+    margin-bottom: 20px; 
+    align-items: center;
 }
 
-footer p a:hover
-{
-    color: #b5d4ed;
-    text-shadow: 0 0 5px #1700ac;
-}
+.about-container img {
 
-
-@media (max-width:800px)
-{
-    .burger-button
-    {
-        display: block;
-    }
-
-    nav ul
-    {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 20px;
-        position: fixed;
-        width: 50%;
-        background-color: rgba(134, 134, 134, 0.563);
-        height: 100vh;
-        text-align: left;
-        margin-right: 0px;
-        top: 60px;
-        right: -120%;
-        transition: all 1s;
-        
-    }
-
-    nav ul li
-    {
-        display: block;
-        padding:  30px;
-    }
-
-    nav ul li a
-    {
-        font-size: 25px;
-        color: white;
-        text-transform: uppercase;
-
-    }
-
-    #check:checked~ul
-    {
-        right: 0;
-    }
-}
-
-@keyframes gradientShift {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+    border-radius: 20px;
+    align-self: center;
   }
+
+.p-summary
+{
+    text-align: center;
+}
+.group-container-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    
+}
+
+
+
+@media (max-width:900px)
+{
+    .section-wrapper {
+        border: 2px solid rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+        padding: 20px;
+        margin: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 100px;
+        
+        backdrop-filter: blur(3px);
+    }
+    
+
+}
