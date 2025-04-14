@@ -16,7 +16,7 @@
 .game-container 
 {
     display: flex;
-    flex-direction: cloumn;
+    flex-direction: column;
     border: 2px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
     padding: 20px;
@@ -81,16 +81,24 @@ main p
 
 .game-img
 {
+    align-self: center;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
 }
 
 .game-link
 {
-    text-align: justify;
+    /*text-align: justify;
     margin-top: 50px;
     margin-right: 5px;
-    border: #b5d4ed;
-    
+    border: #b5d4ed;*/
+    display: inline-block;
+    margin-top: auto;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2); 
+    margin-right: 5px;
 }
 
 .game-link a
