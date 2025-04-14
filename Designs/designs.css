@@ -231,8 +231,8 @@ main p
         padding: 20px;
         margin: 20px;
         backdrop-filter: blur(3px);
-        margin-left: 2%;
-        margin-right: 2%;
+        margin-left: 1%;
+        margin-right: 1%;
         margin-top: 10%;
         
     }
@@ -257,7 +257,7 @@ main p
 {
     .img-design
     {
-        width: 500px;
+        width: 450px;
     }
     .img-group
     {
