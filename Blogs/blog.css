@@ -16,7 +16,7 @@
 .blog-card 
 {
     display: flex;
-    flex-direction: cloumn;
+    flex-direction: column;
     border: 2px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
     padding: 20px;
@@ -57,16 +57,6 @@ main p
  margin-right: 7%;
 }
 
-.view-more
-{
- display: inline-block;
- margin-top: auto;
- color: #fff;
- font-weight: bold;
- text-align: center;
- padding: 5px 20px;
- box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2); 
-}
 
 .section-wrapper {
     border: 2px solid rgba(0, 255, 255, 0.4);
@@ -77,6 +67,28 @@ main p
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%;    
+}
+
+.container-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10%;
+    
+}
+
+.container
+{
+    
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;  
 }
 
 .img-design

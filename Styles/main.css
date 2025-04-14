@@ -193,6 +193,20 @@ a.active
     display: none;
 }
 
+.view-more
+{
+    display: inline-block;
+    margin-top: auto;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2); 
+    margin-right: 5px;
+}  
+
+
+
 .to-top
 {
     display: inline-block;
