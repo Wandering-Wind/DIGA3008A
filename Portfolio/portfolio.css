@@ -108,7 +108,7 @@ main p
     text-decoration: none;
 }
 
-.game-link a :hover 
+.game-link a:hover 
 {
  transform: translateY(-5px);
  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
@@ -124,3 +124,4 @@ main p
     width: 500px;
     height: 300px;
 }
+
