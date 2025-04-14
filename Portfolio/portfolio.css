@@ -125,3 +125,12 @@ main p
     height: 300px;
 }
 
+@media (max-width:900px)
+{
+    .responsive-img
+    {
+        width: 320px;
+        height: 200px;
+    } 
+}
+

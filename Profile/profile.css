@@ -14,8 +14,8 @@
     
     justify-content: center;
     margin-top: 100px;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 5%;  
 }
 
@@ -40,6 +40,17 @@ main figure
     font-family: "AudioWide", sans-serif;
 }
 
+@media (max-width:900px)
+{
+    .container
+    {
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 5%;  
+    }
+}
 
 
 
