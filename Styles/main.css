@@ -66,6 +66,35 @@ p
     border-bottom: 1px solid #00f6ff;
 }
 
+.Sub-Nav
+{
+    border: #00156a;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(0, 12, 93, 0.61);
+    top: 81px;
+    /*box-shadow: 0px 10px 20px rgb(21, 0, 249);*/  
+    box-shadow: 0 0 15px #001dff, 0 0 30px #001dff inset;
+    border-top: 1px solid #00f6ff;
+    
+}
+
+
+
+
+.Sub-Nav nav ul li
+{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 5px;
+    font-family:"AudioWide", sans-serif;
+    transform: skewX(-30deg);
+}
+
 .logo-container 
 {
     display: flex;
@@ -136,8 +165,7 @@ a.active
     color: white;
     padding: 5px 10px;
     box-shadow:  2px 2px 2px rgb(0, 140, 255);
-    /*border-radius: 50%- To create parallelogram effect, cannot have this and have to do it in the transform*/
-   
+    /*border-radius: 50%- To create parallelogram effect, cannot have this and have to do it in the transform*/   
     transform: skewX(-20deg);
 }
 
@@ -192,6 +220,23 @@ footer p a:hover
         display: block;
     }
 
+    .Sub-Nav
+    {
+    border: #00156a;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 30px;
+    min-width: 40px;
+    margin-top: 40px;
+    padding: 20px 16px;
+    background: rgba(0, 12, 93, 0.61);
+    top: 81px;
+    /*box-shadow: 0px 10px 20px rgb(21, 0, 249);*/  
+    box-shadow: 0 0 15px #001dff, 0 0 30px #001dff inset;
+    border-top: 1px solid #00f6ff;
+    }
+
     nav ul
     {
         flex-direction: column;
@@ -199,14 +244,13 @@ footer p a:hover
         padding-left: 20px;
         position: fixed;
         width: 50%;
-        background-color: rgba(134, 134, 134, 0.563);
+        background-color: rgba(112, 112, 112, 0.563);
         height: 100vh;
         text-align: left;
         margin-right: 0px;
         top: 60px;
         right: -120%;
-        transition: all 1s;
-        
+        transition: all 1s;  
     }
 
     nav ul li
