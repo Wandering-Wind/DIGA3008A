@@ -22,7 +22,7 @@ body::after {
     z-index: 0;
 }
 
-h1, .logo, nav ul li a, h2 {
+h1, .logo, nav ul li a, h2, h3 {
     text-shadow: 0 0 8px #00f6ff, 0 0 15px #00f6ff;
 }
 
@@ -58,6 +58,19 @@ p
 {
     font-family: "Share Tech Mono", sans-serif;
     color: aliceblue;
+    font-size: 15px;
+
+}
+
+main li
+{
+text-align: left;
+font-size: 15 px;
+}
+
+figcaption
+{
+    font-size: 15px;
 }
 
 .Main-Nav 

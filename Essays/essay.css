@@ -20,6 +20,20 @@
     margin-bottom: 5%;  
 }
 
+p
+{
+    text-align: left;
+}
+
+p li{
+font-size: 15px;
+}
+
+.img-essay
+{
+    width: 800px;
+}
+
 main article
 {
     margin-left: 7%;
