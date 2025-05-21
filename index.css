@@ -1,17 +1,11 @@
 
 
 .section-wrapper {
-    border: 2px solid rgba(0, 255, 255, 0.4);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
-    padding: 20px;
-    margin: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
+
     margin-top: 100px;
     align-items: center;
-    backdrop-filter: blur(3px);
     justify-content: center;
-
+    /* main.css has margin: 20px*/
 }
 
 .about-container
@@ -32,11 +26,7 @@
     align-self: center;
   }
 
-.p-summary
-{
-    text-align: center;
-}
-.group-container-wrapper {
+  .group-container-wrapper {
     border: 2px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
     padding: 20px;
@@ -66,3 +56,25 @@
     
 
 }
+
+/*Shared in main.css
+.section-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 100px;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    justify-content: center;
+
+}
+
+
+.p-summary
+{
+    text-align: center;
+}
+*/
