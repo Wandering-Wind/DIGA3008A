@@ -80,8 +80,7 @@ figcaption
     height: 80px;
     position:fixed;
     z-index: 1000;
-    top: 0px;
-    /*box-shadow: 0px 10px 20px rgb(21, 0, 249);*/  
+    top: 0px;  
     box-shadow: 0 0 15px #001dff, 0 0 30px #001dff inset;
     border-bottom: 1px solid #00f6ff;
 }
@@ -96,15 +95,11 @@ figcaption
     margin-top: 40px;
     padding: 20px;
     background: rgba(0, 12, 93, 0.61);
-    top: 81px;
-    /*box-shadow: 0px 10px 20px rgb(21, 0, 249);*/  
+    top: 81px; 
     box-shadow: 0 0 15px #001dff, 0 0 30px #001dff inset;
     border-top: 1px solid #00f6ff;
     
 }
-
-
-
 
 .Sub-Nav nav ul li
 {
@@ -118,7 +113,7 @@ figcaption
 .logo-container 
 {
     display: flex;
-    align-items: center; /* Trying to vertically centers both image and text */
+    align-items: center;
     padding: 10px 25px;
   }
 
@@ -171,12 +166,10 @@ nav ul li a
 
 nav ul li a:hover
 {
-    /*transform: translateY(-5px);*/
     color: rgba(255, 255, 255, 0.605);
     background-color: rgba(0, 21, 255, 0.204);
     width: 15%;
     box-shadow:  2px 2px 2px rgb(0, 140, 255);
-    /*padding: 5px 10px; Padding has a weird effect on the spacing when hovering*/
 }
 
 a.active 
@@ -184,12 +177,9 @@ a.active
     background-color: rgba(8, 0, 101, 0.756);
     color: white;
     padding: 5px 10px;
-    box-shadow:  2px 2px 2px rgb(0, 140, 255);
-    /*border-radius: 50%- To create parallelogram effect, cannot have this and have to do it in the transform*/   
+    box-shadow:  2px 2px 2px rgb(0, 140, 255); 
     transform: skewX(-20deg);
 }
-
-
 
 .burger-button
 {
@@ -218,8 +208,6 @@ a.active
     margin-right: 5px;
 }  
 
-
-
 .to-top
 {
     display: inline-block;
@@ -242,7 +230,6 @@ footer
     background: rgb(1, 8, 52);
     height: 90px;
     width: 100%;
-    /*box-shadow: 0 0 10px 20px rgba(0, 0, 255, 0.766);*/
     box-shadow: 0 0 15px 20px #001dff, 0 0 30px #001dff inset;
     border-top: 1px solid #00f6ff;
     text-align: center;
@@ -255,7 +242,6 @@ footer p a:hover
     color: #b5d4ed;
     text-shadow: 0 0 5px #1700ac;
 }
-
 
 @media (max-width:900px)
 {
@@ -311,9 +297,9 @@ footer p a:hover
         padding: 20px;
         background: rgba(0, 12, 93, 0.85);
         position: fixed;
-        top: 80px; /* Just below the Main-Nav */
+        top: 80px;
         width: 100%;
-        z-index: 999; /* Ensures it's above content */
+        z-index: 999;
         box-shadow: 0 0 15px #001dff, 0 0 30px #001dff inset;
         border-top: 1px solid #00f6ff;
     }
@@ -354,3 +340,237 @@ footer p a:hover
       background-position: 0% 50%;
     }
   }
+
+  /*Shared styles to reduce repeating*/
+.Blog-Container
+{
+    
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;  
+}
+
+.p-summary
+{
+    text-align: center;
+}
+
+.blog-card 
+{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    /*margin: 20px; margin-top: 10%;*/
+    backdrop-filter: blur(3px);
+    margin-left: 1%;
+    margin-bottom: 20px;    
+}
+
+.blog-card:hover 
+{
+ transform: translateY(-5px);
+ box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+ background: linear-gradient(-45deg, #00001b, #0a0049, #00156a, #000d5d);
+    background-size: 800% 800%;
+    animation: gradientShift 5s ease-in-out infinite;
+    color: aliceblue;
+    margin: 0;
+}
+
+main h2
+{
+ font-family: "AudioWide", sans-serif;
+ text-align: center;
+ font-size: 20px;
+ color: #f8f8f8;
+ margin-top: 20px;
+}
+
+main p
+{
+ text-align: justify;
+ font-size: 15px;
+ color: #f8f8f8;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ margin-left: 5%;
+ margin-right: 7%;
+}
+
+.section-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;    
+}
+
+.container-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    
+}
+
+.img-design
+{
+    width: 800px;
+}
+
+@media (max-width:1300px)
+{
+
+    .group-container-wrapper {
+        border: 2px solid rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+        padding: 20px;
+        margin: 20px;
+        backdrop-filter: blur(3px);
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 10%;
+        
+    }
+    
+    .group-container
+    {
+        
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 5%;  
+    }
+}
+
+
+@media (max-width:1100px)
+{
+    .img-design
+    {
+        width: 650px;
+    }
+
+    .img-group
+    {
+        height: 600px;
+    }
+    .group-container-wrapper {
+        border: 2px solid rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+        padding: 20px;
+        margin: 20px;
+        backdrop-filter: blur(3px);
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 10%;
+        
+    }
+    
+    .group-container
+    {
+        
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 5%;  
+    }
+}
+
+@media (max-width:900px)
+{
+    .img-group
+    {
+        height: 400px;
+    }
+    .container-wrapper {
+        border: 2px solid rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+        padding: 20px;
+        margin: 20px;
+        backdrop-filter: blur(3px);
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 10%;
+        
+    }
+    
+    .container
+    {
+        
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 5%;  
+    } 
+    
+    .group-container-wrapper {
+        border: 2px solid rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+        padding: 20px;
+        margin: 20px;
+        backdrop-filter: blur(3px);
+        /*margin-left: 1% (designs.css) / 2% (blog.css);
+        margin-right: 1%(designs.css) / 2% (blog.css) ;*/
+        margin-top: 10%;
+        
+    }
+    
+    .group-container
+    {
+        
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 5%;  
+    }
+
+    .img-design
+    {
+        width: 600px;
+    }
+}
+
+@media (max-width:700px)
+{
+    /*.img-design
+    {
+        width: 450px (designs.css) / 500px (blog.css) ;
+    }*/
+    .img-group
+    {
+        height: 300px;
+    }
+}
+
+@media (max-width:600px)
+{
+    .img-design
+    {
+        width: 400px;
+    }
+    .img-group
+    {
+        height: 200px;
+    }
+}
+
+@media (max-width:400px)
+{
+    /*.img-design
+    {
+        width: 100px (designs.css) / 80px blog.css
+    }*/
+}

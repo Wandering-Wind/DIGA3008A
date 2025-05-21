@@ -1,3 +1,58 @@
+.container-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10%;
+    
+}
+
+.container
+{
+    display: flex;
+    
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;  
+}
+
+@media (max-width:900px)
+{
+    .group-container-wrapper {
+        border: 2px solid rgba(0, 255, 255, 0.4);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+        padding: 20px;
+        margin: 20px;
+        backdrop-filter: blur(3px);
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: 10%;
+        
+    }
+}
+
+@media (max-width:700px)
+{
+    .img-design
+    {
+        width: 500px;
+    }
+}
+
+@media (max-width:400px)
+{
+    .img-design
+    {
+        width: 80px;
+    }
+}
+
+/*
+Shared styles between designs.css and blog.css. 
 .Blog-Container
 {
     
@@ -20,7 +75,7 @@
     border: 2px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
     padding: 20px;
-    /*margin: 20px; margin-top: 10%;*/
+    /*margin: 20px; margin-top: 10%;
     backdrop-filter: blur(3px);
     margin-left: 1%;
     margin-bottom: 20px;    
@@ -69,27 +124,7 @@ main p
     margin-top: 10%;    
 }
 
-.container-wrapper {
-    border: 2px solid rgba(0, 255, 255, 0.4);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
-    padding: 20px;
-    margin: 20px;
-    backdrop-filter: blur(3px);
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 10%;
-    
-}
 
-.container
-{
-    
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 5%;  
-}
 
 .img-design
 {
@@ -158,17 +193,7 @@ main p
         margin-bottom: 5%;  
     } 
     
-    .group-container-wrapper {
-        border: 2px solid rgba(0, 255, 255, 0.4);
-        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
-        padding: 20px;
-        margin: 20px;
-        backdrop-filter: blur(3px);
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-top: 10%;
-        
-    }
+
     
     .group-container
     {
@@ -216,3 +241,5 @@ main p
         width: 80px;
     }
 }
+
+    */

@@ -1,4 +1,88 @@
-.Blog-Container
+
+.view-more
+{
+ display: inline-block;
+ margin-top: auto;
+ color: #fff;
+ font-weight: bold;
+ text-align: center;
+ padding: 5px 20px;
+ box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2); 
+}
+
+.container-wrapper {
+    /*border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px); Shared styles blog.css and designs.css*/
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    
+}
+
+.container
+{
+    
+    /*justify-content: center;
+    margin-bottom: 5%; 
+    margin-top: 100px; Shared styles blog.css and designs.css*/
+    margin-left: 20%;
+    margin-right: 20%;
+     
+}
+
+.group-container-wrapper {
+    border: 2px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
+    padding: 20px;
+    margin: 20px;
+    backdrop-filter: blur(3px);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    
+}
+
+.group-container
+{
+    
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;  
+}
+
+@media (max-width:900px)
+{
+    .group-container-wrapper 
+    {
+        margin-left: 1%;
+        margin-right: 1%;    
+    }
+}   
+
+
+@media (max-width:700px)
+{
+    .img-design
+    {
+        width: 450px;
+    }
+}
+
+
+@media (max-width:400px)
+{
+    .img-design
+    {
+        width: 100px;
+    }
+}
+
+/*.Blog-Container
 {
     
     justify-content: center;
@@ -19,9 +103,9 @@
     flex-direction: column;
     border: 2px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
-    padding: 20px;
+    padding: 20px;*/
     /*margin: 20px; margin-top: 10%;*/
-    backdrop-filter: blur(3px);
+/*    backdrop-filter: blur(3px);
     margin-left: 1%;
     margin-bottom: 20px;    
 }
@@ -56,19 +140,11 @@ main p
  margin-left: 5%;
  margin-right: 7%;
 }
+The above is shared styles that are being repeated across blog.css and designs.css
+*/
 
-.view-more
-{
- display: inline-block;
- margin-top: auto;
- color: #fff;
- font-weight: bold;
- text-align: center;
- padding: 5px 20px;
- box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2); 
-}
 
-.section-wrapper {
+/*.section-wrapper {
     border: 2px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
     padding: 20px;
@@ -77,66 +153,24 @@ main p
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 10%;    
-}
+} Shared styles between blog.css and designs.css*/
 
-.container-wrapper {
-    border: 2px solid rgba(0, 255, 255, 0.4);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
-    padding: 20px;
-    margin: 20px;
-    backdrop-filter: blur(3px);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    
-}
 
-.container
-{
-    
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 5%;  
-}
 
-.group-container-wrapper {
-    border: 2px solid rgba(0, 255, 255, 0.4);
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
-    padding: 20px;
-    margin: 20px;
-    backdrop-filter: blur(3px);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    
-}
-
-.group-container
-{
-    
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;  
-}
-
-.img-design
+/*.img-design
 {
     width: 800px;
-}
+} Shared styles blog.css and designs.css*/
 
 
 
-.to-top
+/*.to-top
 {
     color: aliceblue;
     text-align: center;
-}
+}*/
 
-@media (max-width:1300px)
+/*@media (max-width:1300px)
 {
 
     .group-container-wrapper {
@@ -223,21 +257,9 @@ main p
         margin-left: 2%;
         margin-right: 2%;
         margin-bottom: 5%;  
-    } 
-    
-    .group-container-wrapper {
-        border: 2px solid rgba(0, 255, 255, 0.4);
-        box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
-        padding: 20px;
-        margin: 20px;
-        backdrop-filter: blur(3px);
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 10%;
-        
     }
-    
-    .group-container
+
+        .group-container
     {
         
         justify-content: center;
@@ -252,20 +274,7 @@ main p
         width: 600px;
     }
 }
-
-@media (max-width:700px)
-{
-    .img-design
-    {
-        width: 450px;
-    }
-    .img-group
-    {
-        height: 300px;
-    }
-}
-
-@media (max-width:600px)
+    @media (max-width:600px)
 {
     .img-design
     {
@@ -275,14 +284,9 @@ main p
     {
         height: 200px;
     }
-}
-@media (max-width:400px)
-{
-    .img-design
-    {
-        width: 100px;
-    }
-}
+}*/
+    
+
 
 
 
