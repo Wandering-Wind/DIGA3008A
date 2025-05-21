@@ -423,6 +423,8 @@ main p
     
 }
 
+
+
 .img-design
 {
     width: 800px;
@@ -523,11 +525,13 @@ main p
         padding: 20px;
         margin: 20px;
         backdrop-filter: blur(3px);
-        /*margin-left: 1% (designs.css) / 2% (blog.css);
-        margin-right: 1%(designs.css) / 2% (blog.css) ;*/
+        /*margin-left: 1% (designs.css) / 2% (blog.css, essay.css);
+        margin-right: 1%(designs.css) / 2% (blog.css, essay.css) ;*/
         margin-top: 10%;
         
     }
+
+
     
     .group-container
     {
@@ -549,7 +553,7 @@ main p
 {
     /*.img-design
     {
-        width: 450px (designs.css) / 500px (blog.css) ;
+        width: 450px (designs.css) / 500px (blog.css, essay.css) ;
     }*/
     .img-group
     {
@@ -573,6 +577,6 @@ main p
 {
     /*.img-design
     {
-        width: 100px (designs.css) / 80px blog.css
+        width: 100px (designs.css) / 80px blog.css, essay.css
     }*/
 }

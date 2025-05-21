@@ -1,6 +1,4 @@
 
-
-
 p
 {
     text-align: left;
@@ -27,6 +25,70 @@ main article
     font-size: 25px; 
 }
 
+
+
+.container-wrapper {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10%;
+    
+}
+
+.container
+{
+    
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 5%;  
+}
+
+@media (max-width:1100px)
+{
+    .img-essay
+    {
+        width: 650px;
+    }
+}
+
+@media (max-width:900px)
+{
+
+    .img-essay
+    {
+        width: 400px;
+    }
+        .group-container-wrapper 
+        {
+        margin-left: 2%;
+        margin-right: 2%;
+        }    
+}
+
+@media (max-width:700px)
+{
+    .img-essay
+    {
+        width: 500px;
+    }
+}
+
+@media (max-width:400px)
+{
+    .img-essay
+    {
+        width: 80px;
+    }
+}
+
+.footer
+{
+    /*For some reason it overrides the main.css footer alignment*/
+    text-align: center;
+}
+
+/* Shared styles with main.css
 .Blog-Container
 {
     
@@ -49,7 +111,7 @@ main article
     border: 2px solid rgba(0, 255, 255, 0.4);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2);
     padding: 20px;
-    /*margin: 20px; margin-top: 10%;*/
+    /*margin: 20px; margin-top: 10%;
     backdrop-filter: blur(3px);
     margin-left: 1%;
     margin-bottom: 20px;    
@@ -110,15 +172,7 @@ main p
     
 }
 
-.container
-{
-    
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-bottom: 5%;  
-}
+
 
 
 @media (max-width:1100px)
@@ -230,10 +284,5 @@ main p
         height: 200px;
     }
 }
-@media (max-width:400px)
-{
-    .img-design
-    {
-        width: 80px;
-    }
-}
+
+*/
