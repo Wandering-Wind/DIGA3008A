@@ -221,10 +221,11 @@ a.active
 }
 
 #toTopBtn{
+    /*
     position:fixed;
     bottom: 20px;
     left: 20px;
-    display: none; /* Hidden by default */
+    display: none; /* Hidden by default 
     z-index: 1000;
     padding: 10px 15px;
     font-size: 16px;
@@ -235,10 +236,36 @@ a.active
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2); 
     transition: opacity 0.3s ease;
+    colour-tried=#00ffff
+    */
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;
+
+    padding: 12px 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    color: white; 
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+
+    box-shadow: 0 0 10px #0037ff, 0 0 20px #02059266;
+    text-shadow: 0 0 5px #0037ff;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(2px);
 }
 
 #toTopBtn{
-  background-color: #343dbd;  
+  /*background-color: #343dbd;  */
+    background-color: rgba(0, 255, 255, 0.1);
+    box-shadow: 0 0 15px #235ef3, 0 0 30px #0051ffaa;
+    transform: scale(1.05);
 }
 
 .footer
