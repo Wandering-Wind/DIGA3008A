@@ -830,3 +830,24 @@ main p
   }
 }
 
+/*Glow Cursor
+body {
+  cursor: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 12px;
+  height: 12px;
+  background: cyan;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s ease-out;
+}
+  */
+
+

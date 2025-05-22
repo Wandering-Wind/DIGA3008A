@@ -34,6 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+//Tried to make a glow cursor
+document.addEventListener('mousemove', (e) => {
+  document.body.style.setProperty('--mouse-x', `${e.clientX}px`);
+  document.body.style.setProperty('--mouse-y', `${e.clientY}px`);
+  document.body.style.setProperty('--transform', `translate(${e.clientX}px, ${e.clientY}px)`);
+});
+
+
 
 /*  // Get the button
   const toTopBtn = document.getElementById("toTopBtn");
