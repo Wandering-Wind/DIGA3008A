@@ -90,12 +90,9 @@ main article
 
 /* HUD Container */
 .hud-circle {
-  position: relative;
   width: 100px;
   height: 200px;
-  border-radius: 50%;
-  z-index: 10000;
-  pointer-events: none;
+
 }
 
 .radar-container {
