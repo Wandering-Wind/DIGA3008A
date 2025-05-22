@@ -728,7 +728,7 @@ main p
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: cyan;
+  color: rgb(4, 0, 255);
   font-family: 'Orbitron', sans-serif;
   font-size: 2rem;
   animation: pulse 1s infinite;
@@ -737,5 +737,114 @@ main p
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.5; }
+}
+
+.hud-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.outer-ring,
+.inner-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid rgb(0, 8, 255);
+  box-shadow: 0 0 12px rgba(0, 55, 255, 0.6);
+  animation: rotate 8s linear infinite;
+}
+
+.outer-ring {
+  width: 100%;
+  height: 100%;
+  border-width: 10px;
+  opacity: 0.5;
+}
+
+.inner-ring {
+  width: 60%;
+  height: 60%;
+  top: 20%;
+  left: 20%;
+  border-width: 5px;
+  opacity: 0.9;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.radar-ring {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  top: 30px;
+  left: 30px;
+  border-radius: 50%;
+  border: 10px dashed rgb(0, 149, 255);
+  animation: radar-spin 4s linear infinite;
+  opacity: 0.2;
+}
+
+@keyframes radar-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.core-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,255,255,1) 0%, rgba(0,150,255,0.5) 60%, transparent 80%);
+  box-shadow:
+    0 0 10px rgba(0,255,255,0.6),
+    0 0 20px rgba(0,255,255,0.4),
+    0 0 40px rgba(0,255,255,0.3);
+  animation: core-pulse 2s ease-in-out infinite;
+  z-index: 10001;
+}
+
+@keyframes core-pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+.scanner-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  animation: rotate-scan 4s linear infinite;
+  z-index: 10002;
+  pointer-events: none;
+}
+
+@keyframes rotate-scan {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
