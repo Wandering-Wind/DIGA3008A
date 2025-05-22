@@ -65,11 +65,12 @@ if (nextBtn && currentIndex < blogPages.length - 1) {
     getRandomGame();
 });*/
 
+//The usual of waiting for the html document to fully load before running the script
 document.addEventListener('DOMContentLoaded', () => {
-    const newGameBtn = document.getElementById('new-game-btn');
+    const newGameBtn = document.getElementById('new-game-btn'); //getting the button
     const gameCard = document.getElementById('game-card');
 
-    const API_KEY = '6f2d429c52d0421c849d7b80eccebe03'; // Your RAWG API key
+    const API_KEY = '6f2d429c52d0421c849d7b80eccebe03';     //Personal API_Key
 
     async function getRandomGame() {
         try {
