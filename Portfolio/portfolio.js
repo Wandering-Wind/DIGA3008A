@@ -30,3 +30,70 @@ if (nextBtn && currentIndex < blogPages.length - 1) {
 } else if (nextBtn) {
   nextBtn.disabled = true;
 }
+
+//API Section, hopefully this works
+//So this doesn't work because I'm getting an error whereby the API requires a proxy due to CORS
+/*document.addEventListener('DOMContentLoaded', () => {
+    const newGameBtn = document.getElementById('new-game-btn');
+    const gameCard = document.getElementById('game-card');
+
+    async function getRandomGame() {
+        try {
+            const response = await fetch('https://www.freetogame.com/api/games');
+            console.log('Response:', response.status, response.statusText);
+
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+            const games = await response.json();
+            const randomIndex = Math.floor(Math.random() * games.length);
+            const game = games[randomIndex];
+
+            gameCard.innerHTML = `
+                <h3>${game.title}</h3>
+                <p><strong>Genre:</strong> ${game.genre}</p>
+                <p><strong>Platform:</strong> ${game.platform}</p>
+                <a href="${game.game_url}" target="_blank">🔗 Play Now</a>
+                <img src="${game.thumbnail}" alt="Thumbnail of ${game.title}">
+            `;
+        } catch (error) {
+            console.error('Fetch error:', error);
+            gameCard.innerHTML = `<p>Could not load game data. Check console for details.</p>`;
+        }
+    }
+
+    newGameBtn.addEventListener('click', getRandomGame);
+    getRandomGame();
+});*/
+
+document.addEventListener('DOMContentLoaded', () => {
+    const newGameBtn = document.getElementById('new-game-btn');
+    const gameCard = document.getElementById('game-card');
+
+    const API_KEY = '6f2d429c52d0421c849d7b80eccebe03'; // Your RAWG API key
+
+    async function getRandomGame() {
+        try {
+            const response = await fetch(`https://api.rawg.io/api/games?key=${API_KEY}`);
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+            const data = await response.json();
+            const games = data.results;
+            const randomIndex = Math.floor(Math.random() * games.length);
+            const game = games[randomIndex];
+
+            gameCard.innerHTML = `
+                <h3>${game.name}</h3>
+                <p><strong>Released:</strong> ${game.released}</p>
+                <p><strong>Rating:</strong> ${game.rating} / 5</p>
+                <a href="${game.website || '#'}" target="_blank">🔗 Official Website</a>
+                <img src="${game.background_image}" alt="Screenshot of ${game.name}">
+            `;
+        } catch (error) {
+            console.error('Fetch error:', error);
+            gameCard.innerHTML = `<p>Could not load game data. Check console for details.</p>`;
+        }
+    }
+
+    newGameBtn.addEventListener('click', getRandomGame);
+    getRandomGame();
+});

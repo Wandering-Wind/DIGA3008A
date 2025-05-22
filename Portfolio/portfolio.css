@@ -77,6 +77,64 @@
     } 
 }
 
+.api-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    max-width: 600px;
+    color: #fff;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+#game-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+#game-card {
+    margin-top: 20px;
+}
+
+#new-game-btn {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background: linear-gradient(135deg, #02abb7, #0047ff);
+    color: rgb(254, 254, 254);
+    border: 2px solid #0ff;
+    border-radius: 6px;
+    font-family: 'Share Tech Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px #0ff, 0 0 20px #0ff inset;
+}
+
+#new-game-btn2 {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #0062b8;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#new-game-btn:hover {
+    background: #000;
+    color: #fff;
+    box-shadow: 0 0 15px #0ff, 0 0 30px #0ff inset;
+}
+
+#new-game-btn2:hover {
+    background-color: #012bc3;
+}
+
+
 /*Shared with main.css
 
 .Blog-Container
