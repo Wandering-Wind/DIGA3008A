@@ -1,5 +1,5 @@
 
-// List of blog pages in order
+// List of game analysis pages in order
 const blogPages = [
   "game_analysis_1.html"
 ];

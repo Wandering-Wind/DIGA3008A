@@ -1,5 +1,5 @@
 
-// List of blog pages in order
+// List of designs pages in order
 const blogPages = [
   "design_week_5.html",
   "design_week_6.html",
