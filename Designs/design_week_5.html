@@ -195,13 +195,13 @@
         </footer>
         <div id="transitionOverlay"> <!--This is supposed to be called at the end of the page-->
             <div class="hud-circle">
+                <div class="outer-ring"></div>
                 <div class="inner-ring"></div>
                 <!--<h3 class="hud-text">Loading...</h3>--><!--This is supposed to be in the middle of my arc reactor (Iron Man's heart)-->
-                <div class="outer-ring"></div>
                 <div class="radar-ring"></div>
                 <div class="core-glow"></div>
 
-                <svg class="scanner-ring" viewBox="0 0 100 100">
+                <svg class="scanner-ring" viewBox="0 0 100 100"> <!--Scalable vector graph used to draw shapes and graphics-->
                     <defs>
                     <linearGradient id="sweepGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                         <stop offset="0%" stop-color="rgba(0,255,255,0)" />
@@ -211,9 +211,8 @@
                     </defs>
                     <circle cx="50" cy="50" r="45" stroke="url(#sweepGradient)" stroke-width="3" fill="none" />
                 </svg>
-
             </div>
-             
+             <div class="hud-text">SYSTEM LINK ESTABLISHED</div>
         </div> 
     </body>
 </html>
