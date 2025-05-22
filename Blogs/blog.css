@@ -51,6 +51,16 @@
     }
 }
 
+/* HUD Container */
+.hud-circle {
+  position: relative;
+  width: 50px;
+  height: 200px;
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
+}
+
 /*
 Shared styles between designs.css and blog.css. 
 .Blog-Container
