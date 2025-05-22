@@ -220,6 +220,27 @@ a.active
     margin-right: 5px;
 }
 
+#toTopBtn{
+    position:fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none; /* Hidden by default */
+    z-index: 1000;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0px;
+    background-color: #212775;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3), 0 0 30px rgba(0, 255, 255, 0.2); 
+    transition: opacity 0.3s ease;
+}
+
+#toTopBtn{
+  background-color: #343dbd;  
+}
+
 .footer
 {
     font-family: "AudioWide", sans-serif;
