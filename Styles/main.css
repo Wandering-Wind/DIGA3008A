@@ -373,31 +373,44 @@ footer p a:hover
         right: 0;
     }
 
-    .Sub-Nav
+    .Sub-Nav-Container
     {
-        display: block;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        gap: 10px;
-        margin-top: 0;
-        padding: 20px;
-        background: rgba(0, 12, 93, 0.85);
-        position: fixed;
-        top: 80px;
-        width: 100%;
-        z-index: 999;
-        box-shadow: 0 0 15px #001dff, 0 0 30px #001dff inset;
-        border-top: 1px solid #00f6ff;
+        margin-top: 150px;
+         
     }
 
-    .Sub-Nav ul {
+    .Sub-Nav
+    {
         display: flex;
-        flex-direction: column;
-        padding-left: 0;
-        list-style: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 40px auto;
+        padding: 15px 20px;
+        background: rgba(0, 12, 93, 0.85);
+         /* I think these are missing with the sub-nav
+        position: static;
+        top: 80px;
         width: 100%;
+        z-index: 999;*/
+        box-shadow: 0 0 15px #001dff, 0 0 30px #001dff inset;
+        border-top: 1px solid #00f6ff;
+    
     }
+
+    .Sub-Nav ul li {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+    background-color: #001dff;
+    color: #00f6ff;
+    border: 2px solid #00f6ff;
+    border-radius: 6px;
+    text-shadow: 0 0 4px #00f6ff;
+    transition: all 0.2s ease-in-out;
+  }
     
     .Sub-Nav ul li {
         padding: 10px 20px;
@@ -408,6 +421,13 @@ footer p a:hover
         display: block;
         width: 100%;
     }
+
+    .Sub-Nav ul li:hover {
+    background-color: #00f6ff;
+    color: #000;
+    border-color: #001dff;
+    text-shadow: none;
+  }
 
     .responsive-image
     {

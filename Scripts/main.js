@@ -72,6 +72,42 @@ document.addEventListener('mousemove', (e) => {
     animateText();
   });
 
+//Read More button attempt
+//Play on Itch button
+document.addEventListener('DOMContentLoaded', () => {
+  const itchLinks = document.querySelectorAll('.readmore-btn');
+
+  itchLinks.forEach(link => {
+    link.style.display = 'inline-block';
+    link.style.padding = '12px 24px';
+    link.style.margin = '10px 0';
+    link.style.fontSize = '16px';
+    link.style.background = 'linear-gradient(135deg, #02abb7, #0047ff)';
+    link.style.color = '#fff';
+    link.style.border = '2px solid #0ff';
+    link.style.borderRadius = '8px';
+    link.style.textTransform = 'uppercase';
+    link.style.letterSpacing = '1px';
+    link.style.boxShadow = '0 0 12px #0ff, 0 0 20px #0ff inset';
+    link.style.transition = 'all 0.3s ease';
+    link.style.textDecoration = 'none';
+    link.style.fontFamily = '"Share Tech Mono", monospace';
+
+    // Optional hover effect
+    link.addEventListener('mouseover', () => {
+      link.style.background = '#000';
+      link.style.color = '#fff';
+      link.style.boxShadow = '0 0 15px #0ff, 0 0 30px #0ff inset';
+    });
+
+    link.addEventListener('mouseout', () => {
+      link.style.background = 'linear-gradient(135deg, #02abb7, #0047ff)';
+      link.style.color = '#fff';
+      link.style.boxShadow = '0 0 12px #0ff, 0 0 20px #0ff inset';
+    });
+  });
+});
+
 /*  // Get the button
   const toTopBtn = document.getElementById("toTopBtn");
 
