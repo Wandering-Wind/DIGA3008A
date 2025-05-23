@@ -414,6 +414,24 @@ footer p a:hover
         max-width: 100%;
         margin: 10px auto;
     }
+
+    #prevBtn, #nextBtn {
+        top: auto;
+        bottom: 80px; /* move down near bottom */
+        transform: none; /* remove vertical centering */
+        padding: 10px 16px;
+        font-size: 14px;
+        backdrop-filter: none;
+        box-shadow: 0 0 6px #0037ff;
+    }
+
+    #prevBtn {
+        left: 10px;
+    }
+
+    #nextBtn {
+        right: 10px;
+    }
 }
 
 @keyframes gradientShift {
