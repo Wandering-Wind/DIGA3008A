@@ -42,6 +42,33 @@ document.addEventListener('mousemove', (e) => {
 });
 
 
+//Tried to have the heading of everypage type out then erase, then repeat loop
+ document.addEventListener("DOMContentLoaded", () => {
+    const heading = document.querySelector("h1.typewriter");
+    if (!heading) return;
+
+    const fullText = heading.textContent;
+    let currentIndex = 0;
+    let isDeleting = false;
+
+    function animateText() {
+      const visibleText = fullText.substring(0, currentIndex);
+      heading.textContent = visibleText;
+
+      if (!isDeleting && currentIndex < fullText.length) {
+        currentIndex++;
+        setTimeout(animateText, 100);
+      } else if (isDeleting && currentIndex > 0) {
+        currentIndex--;
+        setTimeout(animateText, 50);
+      } else {
+        isDeleting = !isDeleting;
+        setTimeout(animateText, isDeleting ? 1200 : 1000);
+      }
+    }
+
+    animateText();
+  });
 
 /*  // Get the button
   const toTopBtn = document.getElementById("toTopBtn");
