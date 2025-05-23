@@ -134,6 +134,43 @@
     background-color: #012bc3;
 }
 
+.img-analysis
+{
+    width: 750px;
+}
+
+@media (max-width:1100px)
+{
+    .img-analysis
+    {
+        width: 650px;
+    }
+}
+
+@media (max-width:900px)
+{
+
+    .img-analysis
+    {
+        width: 400px;
+    } 
+}
+
+@media (max-width:700px)
+{
+    .img-analysis
+    {
+        width: 300px;
+    }
+}
+
+@media (max-width:400px)
+{
+    .img-analysis
+    {
+        width: 80px;
+    }
+}
 
 /*Shared with main.css
 
