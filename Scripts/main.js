@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 Code does not show visible throughout scrolling
 */
 
+//toTopBtn
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.getElementById("toTopBtn");
 
@@ -43,6 +44,7 @@ document.addEventListener('mousemove', (e) => {
 
 
 //Tried to have the heading of everypage type out then erase, then repeat loop
+//Does not work
  document.addEventListener("DOMContentLoaded", () => {
     const heading = document.querySelector("h1.typewriter");
     if (!heading) return;

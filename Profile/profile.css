@@ -60,6 +60,63 @@ main figure
   transition: opacity 0.3s ease;
 }
 
+/*Skills*/
+#skills-jarvis {
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(0, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    animation: pulse-glow 3s infinite ease-in-out;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+}
+
+.jarvis-heading {
+    font-family: 'Orbitron', sans-serif;
+    color: cyan;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background: rgba(0, 11, 74, 0.6);
+    border: 1px solid cyan;
+    border-radius: 10px;
+    padding: 1rem;
+    color: cyan;
+    text-align: center;
+    font-family: 'Orbitron', monospace;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px cyan;
+}
+
+.skill-name {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 /*Shared styling with main.css
 .section-wrapper {
     border: 2px solid rgba(0, 255, 255, 0.4);
