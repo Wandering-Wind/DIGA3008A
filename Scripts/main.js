@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Optional hover effect
     link.addEventListener('mouseover', () => {
-      link.style.background = '#000';
+      link.style.background = '#063970';
       link.style.color = '#fff';
       link.style.boxShadow = '0 0 15px #0ff, 0 0 30px #0ff inset';
     });
