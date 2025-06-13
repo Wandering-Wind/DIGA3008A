@@ -103,8 +103,18 @@ main figure
     color: cyan;
     text-align: center;
     font-family: 'Orbitron', monospace;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    /* Add these for animation */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
+.skill-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .skill-card:hover {
     transform: scale(1.05);
@@ -116,6 +126,8 @@ main figure
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+
 
 /*Shared styling with main.css
 .section-wrapper {

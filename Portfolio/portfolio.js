@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
     getRandomGame(); //try and load a game when the page loads
 });
 
-//Play on Itch button
-document.addEventListener('DOMContentLoaded', () => {
+//Play on Itch button //Hardcoding CSS
+/*document.addEventListener('DOMContentLoaded', () => {
   const itchLinks = document.querySelectorAll('.itch-btn');
 
   itchLinks.forEach(link => {
@@ -156,3 +156,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+*/

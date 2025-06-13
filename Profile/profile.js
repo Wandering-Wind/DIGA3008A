@@ -17,9 +17,16 @@
   }
 
   //Waiting for page to load
+ 
   document.addEventListener('DOMContentLoaded', () => {
     const skillCards = document.querySelectorAll('.skill-card'); //select all skill-cards
+    skillCards.forEach((card, i) => {
+      setTimeout(() => {
+        card.classList.add('visible');
+      }, i * 200);
+    });
     //loop through each card
+     /* Hardcoded CSS commented out
     skillCards.forEach((card, i) => {
         card.style.opacity = 0;
         card.style.transform = 'translateY(20px)';
@@ -30,8 +37,12 @@
             card.style.opacity = 1;
             card.style.transform = 'translateY(0)';
         }, i * 200);
-    });
+    });*/
 });
+
+
+
+
 
 /* This would be cool but can't abuse js like that
   // Trigger scan on scroll (once per scroll event)
