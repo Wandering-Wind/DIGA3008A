@@ -42,26 +42,181 @@
             <div class="section-wrapper container">
                 <h1 class="p-name">Final Reflection on the Implementation of the Website</h1>
                 <article class="h-entry e-content">
+                
+                <h3>FOLDER STRUCTURE</h3>
                     <p>
-                        The internet, largely considered a space that does not have physical boundaries, is
-                        nonetheless shaped by distinct geographies that can often mirror or even reinforce global
-                        inequalities in power, representation, and access<cite>(Graham, 2014)</cite>. From this arises digital
-                        coloniality, which describes how Western tech corporations show colonial patterns of control
-                        and extraction into the digital world, thus shaping infrastructure, data flows, and knowledge
-                        production to their advantage <cite>(Birhane, 2020)</cite>. Both <cite>Graham (2014) </cite>and <cite>Birhane (2020)</cite>
-                        draw attention to the politics between the internet and digital colonialism and how they are
-                        closely intertwined. They do this by exploring how the technologies and algorithms behind
-                        our digital interactions often reinforce those patterns of inequality, just now in the digital form
-                        of the internet. A clear example of the above stated will be studied in this essay is the
-                        undersea cable outages in West Africa in March 2024, which exposed how digital
-                        infrastructure is still deeply tied to geopolitical power dynamics and colonial history, thus
-                        perpetuating systemic inequalities. This will be supported by the following frameworks:
-                        <cite>Abebe Birhane in <q>Algorithmic Colonization of Africa</q> (2020)</cite>, <cite>Mark Graham in <q>Internet
-                        Geographies </q>(2014)</cite>, and <cite>Christopher Lutz in <q>Digital Inequalities in the Age of Artificial
-                        Intelligence and Big Data </q> (2019)</cite>.
+                        Does my folder structure reflect the hierarchical information structure of my content? <br>
+                        Yes, my folder structure mirrors the hierarchy of the site content. Each main section of 
+                        the website (portfolio, designs, blogs) is organized into its own subfolder, which supports 
+                        clear navigation and scalability.
+                        Assets such as my images are also grouped logically. All images go to one folder, where 
+                        there are subfolders for each section of the website that requires images 
+                        (e.g., Images folder > Portfolio > Game_Analysis > air_hockey.png). 
+                        This helps maintain a meaningful structure that aligns with my site layout and user journey.
+                        The root of the project contains the index files, and each section branches off into folders from there.
                     </p>
 
+                    <p>
+                        Does it separate concerns: HTML, JavaScript, and CSS (data layer, logic layer, and presentation layer)? <br>
+                        Yes, the website follows separation where concerned. HTML files are placed in the root or sections folders
+                         and contain content and semantic markup.
+                        The main CSS file that is shared by every section is stored in the "Styles" folder, whereas particular 
+                        styling that should be different to each page or section is in their respective folders 
+                        (e.g. designs.css will be in the Designs folder with the designs.html)
+                        JavaScript files follow the same layout as CSS layouts. Main shared JS is located in the "Scripts" 
+                        folder, whereas the rest are organized by their respective sections to handle logic and interactivity. 
+                        This separation ensures better maintainability and clarity for me.
 
+                    </p>
+
+                    <p>
+                        Is it modular and scalable?<br>
+                        Yes, the structure is modular and uses consistent naming conventions. 
+                        File names have the first letter Uppercase and words seperated by a "_". 
+                        File names are all lowercase, separated by "_" and follow the snake case naming convention. 
+                        This convention increases readability. Components such as cards or navigation elements are designed to be reusable. 
+                        This modularity makes the site easy to scale as more sections and features are added, and 
+                        the naming conventions support both human readability and long-term maintenance.
+                        Images follow a convention according to where they belong: blog_week_7_dischem_con4 (pros and cons images).
+
+                    </p>
+
+                    <h3>SEMANTIC MARKUP</h3>
+                    <p>
+                        Is my markup providing sufficient context and information to the browser for my user?<br>
+                        Yes, mostly. Elements like &lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, 
+                        &lt;nav&gt;, &lt;footer&gt;, &lt;figure&gt;, &lt;figcaption&gt;, and &lt;time&gt; are examples 
+                        of semantic HTML being correctly used. The use of meta tags (author, description, viewport) also contributes to improved context and SEO.
+                    </p>
+
+                    <p>
+                        Are my interface elements expressed fully and correctly?<br>
+                        Mostly, yes. Navigation elements are appropriately grouped using &lt;nav&gt;, 
+                        with clearly labelled links. The layout for the burger menu is solid for responsiveness. 
+                        Buttons are correctly named and marked &lt;button&gt; for readability (e.g. #toTopBtn).
+                    </p>
+
+                    <p>
+                        Is my content expressed fully and correctly? <br>
+                        Yes, to the best of my ability. The use of &lt;article&gt; and &lt;h1&gt; with h-entry, p-author, 
+                        dt-published (microformats) enhances semantic meaning and machine readability. 
+                        Each section, like User Alignment, User Experience, and References, 
+                        is logically structured with appropriate headings (&lt;h3&gt;) and paragraphs. 
+                        All content is expressed fully, and no content is cut off by layout or anything like that.
+                    </p>
+
+                    <p>
+                        What usability can be augmented by the use of semantic markup?<br>
+                        Keyboard navigation and screen reader usability are greatly enhanced. 
+                        For example, &lt;nav&gt; helps assistive tech skip to menus, and &lt;article&gt; 
+                        allows screen readers to announce blog content distinctly. Semantic HTML improves SEO, 
+                        ensuring crawlers can better understand my structure and rank my content accordingly. 
+                        &lt;figure&gt; and &lt;figcaption&gt; together help describe visuals in context, aiding both human and machine users.
+
+                    </p>
+
+                    <p>
+                        Where can the use of semantic markup improve accessibility?<br>
+                        <ul>
+                            <li>&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;: Defines document regions for screen readers. </li>
+                            <li>&lt;time datetime&gt;: Communicates exact publishing date in machine-readable format. </li> 
+                            <li>&lt;article class="h-entry"&gt;: Microformats help with web syndication, search engine display, and accessibility.</li>  
+                            <li>&lt;a class="p-author h-card"&gt;: Supports microdata for authorship metadata.</li>
+                        </ul>
+                    </p>
+
+                    <h3>METADATA</h3>
+                    <p>
+                        Am I including sufficient metadata to guide the browser in interpreting my content?<br>
+                        Yes. My metadata includes:  
+                        <ul>
+                        <li>&lt;!DOCTYPE html&gt; - Correctly declares HTML5 document type.</li> 
+                        <li>&lt;html lang="en"&gt; - Sets the document language to English. </li> 
+                        <li>&lt;meta charset="UTF-8"&gt; - Ensures correct character encoding (UTF-8).</li>  
+                        <li>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; - Enables responsive design. </li> 
+                        <li>&lt;meta name="author" content="Amina Moosa"&gt; - Provides authorship information.  </li>
+                        <li>&lt;meta name="description" content="Blog week 3 about Interaction Design and a web-style guide"&gt; - Supports SEO and sharing. </li> 
+                        <li>&lt;title&gt; is descriptive and accurate for that specific page content.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        Have I identified content that requires metadata?<br>
+                        Yes, mostly. I've set the page language: <code>&lt;html lang="en"&gt;</code>. I've set the author, myself, Author: <code>&lt;meta name="author" content="Amina Moosa"&gt;</code> <br>
+                        Other content requiring metadata is appropriately marked up, for example:
+                        <ul>
+                            <li>Blog post metadata is expressed using Microformats (<code>h-entry</code>, <code>p-name</code>, <code>p-author</code>, <code>dt-published</code>, etc.) – This is great for semantic clarity and can be picked up by search engines and assistive tech.</li>
+                            <li><code>&lt;link rel="icon" href="..."&gt;</code> – Gives my site a favicon.</li>
+                            <li><code>&lt;link rel="stylesheet" href="..."&gt;</code> and <code>&lt;script src="..."&gt;</code> – External resources are correctly linked.</li>
+                            <li>Font loading uses preconnect, improving performance.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        Is my metadata expressed fully and correctly? <br>
+                        Yes, mostly. My metadata tags are placed within the &lt;head&gt; element. The attributes are spelled and closed properly. 
+                        I make use of semantic microformats (e.g., h-entry, p-author, dt-published). 
+                        My font loading and icons are optimized via preconnect. External links are marked as class="u-url" in references.
+                    </p>
+
+                    <h3>CSS</h3>
+
+                    <p>
+                        Am I avoiding in-line styles and using CSS to create consistent styling throughout my website?  <br>
+                        Yes, mostly. Most styling uses CSS, such as the font and layout or colour. 
+                        This promotes reusability and helps with cleaner code. I use classes and IDs defined in external CSS sheets.
+                    </p>
+
+                    <p>
+                        Is it modular and retainable?  <br>
+                        Yes, mostly. My CSS is modular since it improves scalability through the use of responsive design for pages and images. 
+                        It is also maintainable, since all the repeated styling appears in the main CSS to avoid repetition and prevent styles 
+                        from breaking when adding new features.
+                    </p>
+
+                    <p>
+                        Am I using responsive layouts that adapt to different screen sizes and devices?  <br>
+                        Yes, mostly. This matters since users visit websites on phones, tablets, and laptops, and my layout is flexible enough to adapt. 
+                        I use media queries to adjust the layout for different viewports. I set widths in percentages where appropriate.
+                    </p>
+
+                    <h3>JAVASCRIPT</h3>
+
+                    <p>
+                        Am I expressing interaction points and functionality using JS? (through event handling and DOM manipulation?) <br> 
+                        I’m effectively using event listeners and DOM manipulation to handle interaction points.  
+                        DOMContentLoaded: Multiple instances to ensure the DOM is loaded before attaching behaviour such as transitions between pages.  
+                        Button click: .readmore-btn and navigation buttons (prevBtn, nextBtn) trigger logic on click.  
+                        SVG animation: I’m dynamically creating and animating SVG elements for the page beam effect, etc.
+                    </p>
+
+                    <p>Event handling example:  <br>
+                        There is one click event listener bound in my JS file:  
+                        <code>button.addEventListener("click", function () {  
+                        &nbsp;&nbsp;window.scrollTo({ top: 0, behavior: "smooth" });  
+                        });</code>  <br>
+                        This is inside the DOMContentLoaded event handler for the element with id "toTopBtn." 
+                        It triggers smooth scrolling to the top of the page when that button is clicked.
+                    </p>
+
+                    <p>
+                        Which interaction points and functionalities are repeated? Can they be separated out and consolidated?  <br>
+                        Interaction points and functionalities that are repeated include the prevBtn and nextBtn, since they all require 
+                        an array of files from that specific folder. The transitions that are repeated are slightly varied across sections. 
+                        Other than that, interactions for specific sections are in their respective sections .js files.
+                    </p>
+
+                    <p>
+                        Am I avoiding in-line scripting and linking through to the JS?  <br>
+                        Yes. I'm avoiding inline scripting correctly, there's no inline JS in my HTML. 
+                        All logic is externalized to .js files and executed using event listeners, 
+                        which is good practice for maintainability, security (avoiding inline execution), and separation of concerns.
+                    </p>
+
+                    <p>
+                        Am I using async requests to reduce redownloading and improve performance and UX?  
+                        Yes, for my API, since it improves performance and reduces full-page reloads.
+                    </p>
 
                 </article>
             </div>
