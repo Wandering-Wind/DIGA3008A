@@ -28,6 +28,7 @@ function transitionToPage(targetURL) {
 }
 
 // Enable/disable and set up navigation
+/*
 if (prevBtn && currentIndex > 0) {
   prevBtn.onclick = () => {
     transitionToPage(blogPages[currentIndex - 1]);  //window.location.href = blogPages[currentIndex - 1];
@@ -40,6 +41,23 @@ if (nextBtn && currentIndex < blogPages.length - 1) {
   nextBtn.onclick = () => {
     transitionToPage(blogPages[currentIndex + 1]);  //window.location.href = blogPages[currentIndex + 1];
   };
+} else if (nextBtn) {
+  nextBtn.disabled = true;
+}
+  */
+
+if (prevBtn && currentIndex > 0) {
+  prevBtn.addEventListener('click', () => {
+    transitionToPage(blogPages[currentIndex - 1]);
+  });
+} else if (prevBtn) {
+  prevBtn.disabled = true;
+}
+
+if (nextBtn && currentIndex < blogPages.length - 1) {
+  nextBtn.addEventListener('click', () => {
+    transitionToPage(blogPages[currentIndex + 1]);
+  });
 } else if (nextBtn) {
   nextBtn.disabled = true;
 }

@@ -77,6 +77,7 @@ document.addEventListener('mousemove', (e) => {
 document.addEventListener('DOMContentLoaded', () => {
   const itchLinks = document.querySelectorAll('.readmore-btn');
 
+  /*Commented out the css hardcode
   itchLinks.forEach(link => {
     link.style.display = 'inline-block';
     link.style.padding = '12px 24px';
@@ -105,7 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
       link.style.color = '#fff';
       link.style.boxShadow = '0 0 12px #0ff, 0 0 20px #0ff inset';
     });
-  });
+  });*/
+
+  itchLinks.forEach(link => {
+  link.classList.add('readmore-btn-styled');
+});
+
 });
 
 /*  // Get the button
