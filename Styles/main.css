@@ -32,6 +32,11 @@ a{
 
 }
 
+a.u-url {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 .pulse-circle {
     width: 300px;
     height: 300px;
@@ -315,6 +320,10 @@ a.active
 .footer
 {
     font-family: "AudioWide", sans-serif;
+}
+
+.footer a {
+  margin-right: 1rem; /* Adjust spacing as needed */
 }
 
 footer

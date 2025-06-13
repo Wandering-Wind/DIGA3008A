@@ -45,15 +45,7 @@
     
 }
 
-.group-container
-{
-    
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 5%;  
-}
+
 
 @media (max-width:900px)
 {

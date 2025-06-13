@@ -9,6 +9,11 @@ main ul li
     font-size: 15px;
 }
 
+a.u-url {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
 
 .img-essay
 {
