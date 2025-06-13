@@ -12,7 +12,8 @@ const blogPages = [
   "blog_week_10.html",
   "blog_week_11.html",
   "blog_week_12.html",
-  "blog_week_13.html"
+  "blog_week_13.html",
+  "blog_week_14.html"
 ];
 
 // Get current page filename
