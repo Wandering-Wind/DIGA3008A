@@ -22,7 +22,8 @@ Trying to get the button to show while scrolling and not stay stagnent at the bo
 // List of essay pages in order
 const blogPages = [
   "essay_1.html",
-  "essay_2.html"
+  "essay_2.html",
+  "essay_3_reflection.html"
 ];
 
 // Get current page filename

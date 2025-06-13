@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essays</title>
+    <meta name="author" content="Amina Moosa">
+    <meta name="description" content="Final Reflection on the Implementation of the Website">
+    <link rel="stylesheet" href="../Styles/normalize.css"/>
+    <link rel="stylesheet" href="../Styles/main.css"/>
+    <link rel="stylesheet" href="essay.css">
+    <script src="../Scripts/main.js" defer></script>
+    <script src="essay.js" defer></script>
+    <link rel="icon" href="../Images/profile_avatar.png" type="image/x-icon">
+    
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Iansui&family=Londrina+Sketch&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Share+Tech+Mono&family=Tangerine:wght@400;700&family=Updock&display=swap" rel="stylesheet">
+</head>
+    <body>
+        <header>
+            <nav class="Main-Nav">
+                <img src="../Images/profile_avatar_2.png" class="logoImage" alt="Avatar image of Amina Moosa"/>
+                <span class="logo">Amina Moosa</span>
+                <script src="https://kit.fontawesome.com/486a7eab66.js" crossorigin="anonymous"></script>
+                <input type="checkbox"  id="check"/>
+                <label for="check" class="burger-button"><i class="fa-solid fa-bars"></i></label>
+                <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Blogs/blog.html">Blogs</a> </li>
+                <li><a href="../Designs/designs.html">Designs</a></li>
+                <li><a href="essay.html" class="active">Essays</a> </li>
+                <li><a href="../Portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="../Profile/profile.html">Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="section-wrapper container">
+                <h1 class="p-name">Final Reflection on the Implementation of the Website</h1>
+                <article class="h-entry e-content">
+                    <p>
+                        The internet, largely considered a space that does not have physical boundaries, is
+                        nonetheless shaped by distinct geographies that can often mirror or even reinforce global
+                        inequalities in power, representation, and access<cite>(Graham, 2014)</cite>. From this arises digital
+                        coloniality, which describes how Western tech corporations show colonial patterns of control
+                        and extraction into the digital world, thus shaping infrastructure, data flows, and knowledge
+                        production to their advantage <cite>(Birhane, 2020)</cite>. Both <cite>Graham (2014) </cite>and <cite>Birhane (2020)</cite>
+                        draw attention to the politics between the internet and digital colonialism and how they are
+                        closely intertwined. They do this by exploring how the technologies and algorithms behind
+                        our digital interactions often reinforce those patterns of inequality, just now in the digital form
+                        of the internet. A clear example of the above stated will be studied in this essay is the
+                        undersea cable outages in West Africa in March 2024, which exposed how digital
+                        infrastructure is still deeply tied to geopolitical power dynamics and colonial history, thus
+                        perpetuating systemic inequalities. This will be supported by the following frameworks:
+                        <cite>Abebe Birhane in <q>Algorithmic Colonization of Africa</q> (2020)</cite>, <cite>Mark Graham in <q>Internet
+                        Geographies </q>(2014)</cite>, and <cite>Christopher Lutz in <q>Digital Inequalities in the Age of Artificial
+                        Intelligence and Big Data </q> (2019)</cite>.
+                    </p>
+
+
+
+                </article>
+            </div>
+        </main>
+        
+            <!--<button id="toTopBtn" title="Go to top">↑ Top</button>-->
+        <button id="toTopBtn" title="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+            <div class="blog-nav">
+                <button id="prevBtn">←</button>
+                <button id="nextBtn">→</button>
+            </div>
+        
+
+        <footer>
+            <p class="footer">
+                <a href="mailto:2750697@students.wits.ac.za">
+                <i class="fas fa-envelope"></i> Email
+                </a>
+                  
+                <a href="https://github.com/Wandering-Wind" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+                </a>
+                  
+                <a href="https://wandering-wind.itch.io/" target="_blank">
+                <i class="fab fa-itch-io"></i> Itch.io
+                </a>
+            </p>
+
+            <p class="footer">Brought to you by Amina Moosa</p>
+        </footer>
+
+        <div id="transitionOverlay"> <!--This is supposed to be called at the end of the page-->
+            <div class="hud-circle">
+                <div class="outer-ring"></div>
+                <div class="inner-ring"></div>
+                <!--<h3 class="hud-text">Loading...</h3>--><!--This is supposed to be in the middle of my arc reactor (Iron Man's heart)-->
+                <div class="radar-ring"></div>
+                <div class="core-glow"></div>
+
+                <svg class="scanner-ring" viewBox="0 0 100 100"> <!--Scalable vector graph used to draw shapes and graphics-->
+                    <defs>
+                    <linearGradient id="sweepGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="rgba(0,255,255,0)" />
+                        <stop offset="50%" stop-color="rgba(0,255,255,0.5)" />
+                        <stop offset="100%" stop-color="rgba(0,255,255,0)" />
+                    </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" stroke="url(#sweepGradient)" stroke-width="3" fill="none" />
+                </svg>
+            </div>
+             <div class="hud-text">SYSTEM LINK ESTABLISHED</div>
+        </div>
+
+        <div class="radar-container">
+
+        <!-- Glowing Ring (doens't work, it just stays visible in the left corner of the page the whole time)
+        <svg class="scanner-ring" viewBox="0 0 100 100">
+            <defs>
+            <linearGradient id="sweepGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(0,255,255,0)" />
+                <stop offset="50%" stop-color="rgba(0,255,255,0.5)" />
+                <stop offset="100%" stop-color="rgba(0,255,255,0)" />
+            </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="45" stroke="url(#sweepGradient)" stroke-width="3" fill="none" />
+        </svg>
+
+         Beam + Trail 
+        <svg class="beam-layer" viewBox="0 0 100 100">
+             Dynamic content will go here 
+        </svg>
+        -->
+        
+        </div>
+
+    </body>
+</html>
