@@ -54,7 +54,7 @@ h1
     text-align: center;
 }
 
-p
+p, figcaption
 {
     font-family: "Share Tech Mono", sans-serif;
     color: aliceblue;
